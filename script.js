@@ -35,7 +35,7 @@ let chartIncome = new Chart(income, {
   data: dataIncome,
   options: {
     animation: {
-      duration: 1000,
+      duration: 2000,
       easing: 'linear',
     },
 
@@ -55,13 +55,13 @@ let chartIncome = new Chart(income, {
       y: {
         beginAtZero: true,
         border: {
-          // color: 'red',
+          color: 'green',
         },
       },
       x: {
         beginAtZero: true,
         border: {
-          // color: 'red',
+          color: 'green',
         },
       },
     },
@@ -72,7 +72,7 @@ let chartExpenses = new Chart(expenses, {
   data: dataExpenses,
   options: {
     animation: {
-      duration: 1000,
+      duration: 2000,
       easing: 'linear',
     },
 
@@ -92,13 +92,13 @@ let chartExpenses = new Chart(expenses, {
       y: {
         beginAtZero: true,
         border: {
-          // color: 'red',
+          color: 'red',
         },
       },
       x: {
         beginAtZero: true,
         border: {
-          // color: 'red',
+          color: 'red',
         },
       },
     },
