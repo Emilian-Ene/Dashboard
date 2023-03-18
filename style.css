@@ -9,7 +9,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  max-width: 1200px;
+  max-width: 1400px;
   height: 100vh;
   background-color: rgb(32 32 35);
   margin: auto;
@@ -17,40 +17,35 @@ body {
   flex-direction: column;
 }
 #header {
+  width: 100%;
   height: 10%;
-  /* border: 2px solid red; */
   border-radius: 10px;
   background-color: rgb(40, 40, 43);
   margin: 8px 0 8px 0;
   border: 2px solid rgb(255, 235, 59);
 }
 .main-content {
+  width: 100%;
   height: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
   margin-bottom: 8px;
+  gap: 8px;
 }
 
 .content-left {
   background-color: rgb(54, 69, 79);
-  /* border: 2px solid green; */
+  padding: 2rem;
   width: 320px;
   height: 100%;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   border: 2px solid rgb(255, 235, 59);
-
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .header {
-  /* border: 4px solid red; */
-  /* width: 80%; */
-  /* height: 10%; */
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -65,8 +60,6 @@ body {
 .header img {
   width: 100px;
   height: 100px;
-  /* background-color: rgb(255, 0, 0); */
-  /* background-image: url(https://unsplash.com/photos/WNoLnJo7tS8); */
   padding: 4px;
   border-radius: 15px;
   padding: 4px;
@@ -80,8 +73,6 @@ body {
   font-size: 2rem;
 }
 .nav-bar {
-  /* border: 4px solid red; */
-  /* width: 50%; */
   height: 40%;
   display: flex;
   flex-direction: column;
@@ -110,8 +101,8 @@ i {
 }
 
 .content-right {
-  /* margin: auto; */
-  width: 870px;
+  padding: 2rem;
+  width: 100%;
   height: 100%;
   border: 2px solid rgb(255, 235, 59);
   border-radius: 10px;
@@ -124,29 +115,20 @@ i {
 }
 
 .total-income {
-  /* margin-top: 20px;
-  margin: 10px; */
-  width: 50%;
+  width: 80%;
   height: 250px;
   border: 2px solid red;
 }
 .total-expenses {
-  /* margin-top: 20px;
-  margin-left: 10px; */
-  width: 50%;
+  width: 80%;
   height: 250px;
   border: 2px solid red;
 }
 .chart {
-  /* margin-top: 20px;
-  margin-left: 10px; */
-  /* margin: auto; */
-  /* position: relative; */
-  /* margin-left: 10%; */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 80%;
   height: 250px;
   background-color: rgb(26, 19, 19);
   border-radius: 10px;
