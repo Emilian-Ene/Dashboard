@@ -48,7 +48,7 @@ let chartIncome = new Chart(income, {
       },
       title: {
         display: true,
-        text: 'Chart.js Line Chart',
+        text: 'My Income',
       },
     },
     scales: {
@@ -85,7 +85,7 @@ let chartExpenses = new Chart(expenses, {
       },
       title: {
         display: true,
-        text: 'Chart.js Line Chart',
+        text: 'My Expenses',
       },
     },
     scales: {
