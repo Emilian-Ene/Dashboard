@@ -16,14 +16,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-#header {
-  width: 100%;
-  height: 10%;
-  border-radius: 10px;
-  background-color: rgb(40, 40, 43);
-  margin: 8px 0 8px 0;
-  border: 2px solid rgb(255, 235, 59);
-}
+
 .main-content {
   width: 100%;
   height: 90%;
@@ -116,11 +109,45 @@ i {
   width: 80%;
   height: 250px;
   border: 2px solid red;
+  border-radius: 10px;
+  background-color: rgb(26, 19, 19);
+}
+.total-income .title > h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1.8rem;
+  /* border: 2px solid red; */
+  color: rgb(228, 228, 228);
+}
+.total-income .title > p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1.4rem;
+  color: rgb(228, 228, 228);
 }
 .total-expenses {
   width: 80%;
   height: 250px;
   border: 2px solid red;
+  border-radius: 10px;
+  background-color: rgb(26, 19, 19);
+}
+.total-expenses .title > h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1.8rem;
+  /* border: 2px solid red; */
+  color: rgb(228, 228, 228);
+}
+.total-expenses .title > p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1.4rem;
+  color: rgb(228, 228, 228);
 }
 .chart {
   display: flex;
@@ -130,4 +157,52 @@ i {
   height: 250px;
   background-color: rgb(26, 19, 19);
   border-radius: 10px;
+}
+@media (max-width: 690px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .content-left {
+    flex-direction: row;
+
+    width: 100%;
+    height: 10%;
+  }
+  .nav-bar {
+    flex-direction: row;
+  }
+  .nav-bar i {
+    display: none;
+  }
+  .nav-bar a {
+    font-size: 1.6rem;
+    margin: 10px 10px;
+  }
+  .header :nth-child(1) {
+    width: 60px;
+    height: 60px;
+    /* margin: auto; */
+  }
+  .header :nth-child(2) {
+    display: none;
+  }
+  /* .content-left {
+    display: none;
+  } */
+  .content-right {
+    width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  .total-income,
+  .total-expenses,
+  .chart {
+    width: 100%;
+  }
+  img {
+    display: none;
+  }
+  .header {
+    margin: 0;
+  }
 }
