@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>App</title>
+  </head>
+  <body>
+    <header id="header"></header>
+    <main class="main-content">
+      <div class="content-left">
+        <div class="header">
+          <img src="Assets/julian-wan-unsplash.jpg" alt="" />
+          <div class="user">
+            <h1 class="name">John Smith</h1>
+            <p>2830 £</p>
+          </div>
+        </div>
+        <div class="nav-bar">
+          <div class="home">
+            <i class="fa-solid fa-house"></i>
+            <a href="index.html">Home</a>
+          </div>
+          <div class="dashboard">
+            <i class="fa-solid fa-table-columns"></i>
+            <a href="#">Dashboard</a>
+          </div>
+          <div class="income">
+            <i class="fa-solid fa-wallet"></i>
+            <!-- <i class="fa-solid fa-chart-line"></i> -->
+            <a href="income.html">Income</a>
+          </div>
+          <div class="expenses">
+            <i class="fa-solid fa-chart-line"></i>
+            <a href="#">Expenses</a>
+          </div>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="total-income"></div>
+        <div class="total-expenses"></div>
+        <div class="chart">
+          <canvas id="myChart-income"></canvas>
+        </div>
+        <div class="chart">
+          <canvas id="myChart-expeses"></canvas>
+        </div>
+        <div>
+          <h1>sadsd</h1>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
